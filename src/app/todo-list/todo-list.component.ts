@@ -60,12 +60,12 @@ export class TodoListComponent implements OnInit {
   }
 
   open(t) {
-    // const modalRef = this.modalService.open(UpdateDialogComponent,{ size: 'lg' });
-    // modalRef.componentInstance.t = t;
-    // console.log(modalRef.result)
-    // return modalRef.result;
-  console.log(t);
-   console.log(this.model);
+    const modalRef = this.modalService.open(UpdateDialogComponent,{ size: 'lg' });
+    modalRef.componentInstance.t = t;
+    console.log(modalRef.result)
+    return modalRef.result;
+  //console.log(t);
+ 
 
   }
 
